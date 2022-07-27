@@ -1,0 +1,4 @@
+Django
+djangorestframework
+django_extensions
+python-decouple
