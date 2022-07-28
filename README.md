@@ -66,3 +66,5 @@ CompareX is a system under development to serve the following functionalities
   - Open the terminal.
   - Run `git pull upstream develop`
     > This will check for any changes that have been made to the original repository, it will then bring those changes to your local machine and merge (merge) the changes.
+
+- ### How to get started with the Frontend
