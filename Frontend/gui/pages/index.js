@@ -6,5 +6,10 @@ import Footer from "../components/Home/footer";
 import Section from "../components/Home/section";
 
 export default function Home() {
-  return <div className={styles.container}>Home Page</div>;
+  return (
+    <div className={styles.container}>
+      <Header />
+      <Section />
+    </div>
+  );
 }
