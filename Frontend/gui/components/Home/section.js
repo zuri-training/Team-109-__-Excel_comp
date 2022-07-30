@@ -68,6 +68,26 @@ export default function Section() {
               </div>
             </div>
           </div>
+          {modal && (
+            <div className={styles.error__modal}>
+              <div className={styles.modal}>
+                <div
+                  className={styles.close__button}
+                  onClick={() => setModal(false)}
+                >
+                  <Image src={icons.cancel} />
+                </div>
+                <h2 className={styles.modal__head}>Oops!</h2>
+                <p className={styles.modal__info}>
+                  Tool is only available to Registered Users. Quickly sign up
+                  with your Email Address to compare your Excel Files for free!
+                </p>
+                <button className={styles.modal__button}>
+                  Sign Up for free
+                </button>
+              </div>
+            </div>
+          )}
         </div>
 
         <div className={styles.check}>
@@ -219,24 +239,6 @@ export default function Section() {
           </div>
         </div>
       </div>
-      {modal && (
-        <div className={styles.error__modal}>
-          <div className={styles.modal}>
-            <div
-              className={styles.close__button}
-              onClick={() => setModal(false)}
-            >
-              <Image src={icons.cancel} />
-            </div>
-            <h2 className={styles.modal__head}>Oops!</h2>
-            <p className={styles.modal__info}>
-              Tool is only available to Registered Users. Quickly sign up with
-              your Email Address to compare your Excel Files for free!
-            </p>
-            <button className={styles.modal__button}>Sign Up for free</button>
-          </div>
-        </div>
-      )}
     </section>
   );
 }
