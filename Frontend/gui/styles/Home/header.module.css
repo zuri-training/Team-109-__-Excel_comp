@@ -24,12 +24,17 @@
 }
 
 .nav {
-  width: 87%;
+  width: 89%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding-top: 32px;
   box-sizing: border-box;
+}
+
+.logo__container {
+  display: flex;
+  align-items: center;
 }
 
 .logo {
@@ -44,12 +49,13 @@
   list-style-type: none;
   display: flex;
   align-items: center;
+  margin-left: 30px;
 }
 
 .list__item {
   list-style-type: none;
   display: inline-block;
-  padding: 0px 25px;
+  padding: 0px 15px;
 }
 
 .list__item > a {
@@ -109,12 +115,13 @@
   display: flex;
   justify-content: center;
   border: 1px solid white;
-  padding: 8px 24px;
-  border-radius: 10px;
+  padding: 6px 20px;
+  border-radius: 8px;
   margin: auto;
   position: relative;
+  font-weight: 600;
   font-size: 12px;
-  font-weight: 800;
+  line-height: 14px;
 }
 
 .crown {
