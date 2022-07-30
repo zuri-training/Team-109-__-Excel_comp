@@ -48,7 +48,7 @@ export default function Header() {
             Save your time and build and build productivity with the world-best
             performing excel
             <br />
-            comparison tool
+            file comparison tool
           </p>
           <span className={styles.use}>
             <a href="#" className={styles.btn_3}>

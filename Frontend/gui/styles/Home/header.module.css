@@ -24,7 +24,7 @@
 }
 
 .nav {
-  width: 89%;
+  width: 91%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -75,7 +75,7 @@
   text-decoration: none;
   border: 2px solid white;
   font-weight: bold;
-  padding: 10px 20px;
+  padding: 10px 40px;
   border-radius: 10px;
 }
 
@@ -100,7 +100,7 @@
 
 .main {
   position: absolute;
-  top: 20%;
+  top: 25%;
   left: 22%;
 }
 .content {
@@ -126,8 +126,8 @@
 
 .crown {
   position: absolute;
-  top: -68%;
-  right: -20%;
+  top: -81%;
+  right: 0%;
 }
 
 .easier {
@@ -135,8 +135,11 @@
   display: flex;
   justify-content: center;
   text-align: center;
-  font-size: 50px;
-  line-height: 73px;
+  font-size: 45px;
+  line-height: 67px;
+  font-weight: 500;
+  font-stretch: ultra-expanded;
+  margin-top: 20px;
 }
 
 .save {
@@ -153,7 +156,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 1rem;
+  margin-top: 40px;
   padding-bottom: 10px;
 }
 
