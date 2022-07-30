@@ -1,0 +1,47 @@
+.section {
+  margin-top: 20rem;
+}
+
+.used_by {
+  display: flex;
+  justify-content: center;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 2rem;
+}
+
+.how {
+  text-align: center;
+  margin-top: 40px;
+  color: #1c2c27;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 60px;
+  padding-top: 100px;
+}
+
+.how_1 {
+  color: #015239;
+}
+
+.steps {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: rgba(22, 22, 22, 0.8);
+  font-weight: 300;
+  margin-top: 20px;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.frame {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 60px 0px 10px 10px;
+}
