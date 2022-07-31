@@ -7,6 +7,11 @@ import crown from "./Fill 7.svg";
 import frame1 from "./Frame 2294.svg";
 import upwork from "./Upwork.svg";
 import vector from "./Vector.svg";
+import followers from "./200K followers.svg";
+import atinuke from "./Atinuke.svg";
+import damilare from "./Damilare.svg";
+import drag from "./drag.svg";
+import michael from "./michael.svg";
 
 const images = {
   lovedBy,
@@ -18,6 +23,11 @@ const images = {
   vector,
   upwork,
   crown,
+  followers,
+  atinuke,
+  damilare,
+  drag,
+  michael,
 };
 
 export default images;

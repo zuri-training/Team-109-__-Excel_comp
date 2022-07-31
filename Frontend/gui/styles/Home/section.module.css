@@ -1,5 +1,16 @@
+@font-face {
+  font-family: "Passenger Sans";
+  src: url("../../assets/fonts/PassengerSans-Regular.eot"),
+    url("../../assets/fonts/PassengerSans-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 .section {
   margin-top: 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .used_by {
@@ -21,7 +32,7 @@
   font-weight: 600;
   font-size: 40px;
   line-height: 60px;
-  padding-top: 100px;
+  margin-top: 210px;
 }
 
 .how_1 {
@@ -43,5 +54,362 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 60px 0px 10px 10px;
+  margin-top: 64px;
+}
+
+.compare__box {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 128px;
+}
+
+.compare {
+  text-align: center;
+  font-family: "Manrope";
+  font-style: normal;
+  margin-top: 64px;
+}
+
+.compare h4 {
+  color: #015239;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 66px;
+}
+
+.compare span {
+  color: #161616;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 66px;
+}
+
+.main_upload {
+  display: flex;
+  margin-top: 68px;
+  width: 100%;
+  height: 380px;
+  justify-content: space-between;
+  position: relative;
+}
+
+.upload {
+  background-color: rgba(232, 236, 233, 0.5);
+  border: 3px solid rgba(22, 22, 22, 0.24);
+  width: 45%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 24px;
+}
+
+.upload_one {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.drag_upload {
+  width: 85%;
+  text-align: center;
+}
+
+.drag_upload a {
+  color: rgba(22, 22, 22, 0.5);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  font-family: "Passenger Sans";
+  font-style: normal;
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+.error__modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.close__button {
+  position: absolute;
+  right: 22px;
+  top: 22px;
+  cursor: pointer;
+}
+
+.modal {
+  background-color: white;
+  width: 564px;
+  height: 331px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border-radius: 16px;
+}
+
+.modal__head {
+  font-family: "Passenger Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 58px;
+  text-align: center;
+  color: #cc0000;
+}
+
+.modal__info {
+  font-family: "Passenger Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  text-align: center;
+  color: rgba(22, 22, 22, 0.8);
+  margin-top: 16px;
+  width: 90%;
+}
+
+.modal__button {
+  padding: 16px 32px;
+  background: #015239;
+  border-color: #015239;
+  border-radius: 8px;
+  font-family: "Passenger Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #ffffff;
+  margin-top: 24px;
+}
+
+.check {
+  width: 100%;
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+}
+
+.terms__label {
+  font-family: "Passenger Sans";
+  font-weight: 550;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: #015239;
+  margin-left: 3px;
+}
+
+.terms {
+  width: 18px;
+  height: 18px;
+  border: 3px solid #015239;
+  border-radius: 2px;
+  cursor: pointer;
+  border-color: #015239;
+  color: #015239;
+}
+
+.terms:checked {
+  background-color: #015239;
+  color: #015239;
+}
+
+.check__icon {
+  position: relative;
+  height: 18px;
+  width: 18px;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.files {
+  border-radius: 10px;
+  color: white;
+  margin-top: 40px;
+}
+
+.btn {
+  margin-top: 40px;
+  background-color: #015239;
+  border-color: #015239;
+  color: #ffffff;
+  border-radius: 5px;
+  padding: 16px 40px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.everyone__convinced {
+  width: 90%;
+  margin-top: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.people {
+  margin-top: 95px;
+}
+
+.convinced {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 40px;
+}
+
+.convinced h3 {
+  color: #015239;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 66px;
+  font-family: "Manrope";
+  font-style: normal;
+}
+
+.convinced span {
+  color: #161616;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 66px;
+  font-family: "Manrope";
+  font-style: normal;
+}
+
+.reviews {
+  width: 100%;
+  height: 239px;
+  margin-top: 68px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.review {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0px 8px 32px #eeeeee, 0px 4px 8px rgba(66, 71, 44, 0.84),
+    0px 0px 1px rgba(66, 71, 44, 0.32);
+  width: 32%;
+  height: 100%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.review__box {
+  width: 90%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.review__box p {
+  width: 100%;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 150%;
+  color: rgba(22, 22, 22, 0.8);
+  font-family: "Passenger Sans";
+  font-style: italic;
+}
+
+.reviewer {
+  display: flex;
+  align-items: center;
+}
+
+.reviewer__name {
+  margin-left: 5px;
+}
+
+.FAQ {
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 128px;
+  margin-bottom: 192px;
+}
+
+.FAQ__header {
+  font-size: 48px;
+  font-weight: 600;
+  margin-top: 64px;
+  line-height: 65.57px;
+}
+
+.FAQ__header span {
+  color: #015239;
+  font-family: "Manrope", sans-serif;
+  font-style: normal;
+}
+.FAQ__header h4 {
+  color: #161616;
+  font-family: "Manrope", sans-serif;
+  font-style: normal;
+}
+
+.questions {
+  margin-top: 68px;
+  width: 100%;
+}
+
+.question {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0px 8px 32px #eeeeee, 0px 4px 8px rgba(66, 71, 44, 0.84),
+    0px 0px 1px rgba(66, 71, 44, 0.32);
+  height: 148px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.question__inner {
+  width: 96%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.question h4 {
+  font-family: "Passenger Sans";
+  font-style: normal;
+  font-size: 32px;
+  line-height: 38px;
+  font-weight: 500;
+  color: rgba(22, 22, 22, 0.8);
+}
+
+.question p {
+  font-family: "Passenger Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: rgba(22, 22, 22, 0.8);
 }

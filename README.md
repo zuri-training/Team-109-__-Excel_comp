@@ -12,6 +12,22 @@ CompareX is a system under development to serve the following functionalities
 - remove duplicates and return 2 files
 - highlight duplicates and return two files
 
+View the live demo of the project [here](https://team-109-excel-comp.vercel.app/)
+
+## Resources
+
+- #### [Figma](https://www.figma.com/file/2ykYhTeaZk7l0jIfNZdKK9/team-109?node-id=336%3A2068)
+
+- #### [Figjam](https://www.figma.com/file/qquWLVSOeBwgDvS1vf5JWa/Team-109?node-id=0%3A1)
+
+- #### [Database Schema](https://drive.google.com/file/d/1eWcCXfDh7m7rA5JLCGW_fAQL_PehkVsl/view)
+
+- #### [Presentation](https://drive.google.com/file/d/1MYBPX_cKadn97FVzHdNSxi-t-s937xqQ/view?usp=sharing)
+
+- #### [Contributions](https://docs.google.com/spreadsheets/d/1dzV8WrCeq6UGmxM1WOFoyGZgR5rHHEzY6x7QxK2dqyc/edit?usp=drivesdk)
+
+- #### [Suggestions Box](https://docs.google.com/document/d/1dvsMw-w4K_LoPm12NRYw2Z-xbglzFKFyQ6gf6764OG8/edit)
+
 ## How to Contribute
 
 - #### Fork your own copy of the Repository
@@ -68,4 +84,3 @@ CompareX is a system under development to serve the following functionalities
     > This will check for any changes that have been made to the original repository, it will then bring those changes to your local machine and merge (merge) the changes.
 
 - ### How to get started with the Frontend
-  testing

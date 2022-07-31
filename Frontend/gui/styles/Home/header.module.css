@@ -24,12 +24,17 @@
 }
 
 .nav {
-  width: 87%;
+  width: 91%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding-top: 32px;
   box-sizing: border-box;
+}
+
+.logo__container {
+  display: flex;
+  align-items: center;
 }
 
 .logo {
@@ -44,12 +49,13 @@
   list-style-type: none;
   display: flex;
   align-items: center;
+  margin-left: 30px;
 }
 
 .list__item {
   list-style-type: none;
   display: inline-block;
-  padding: 0px 25px;
+  padding: 0px 15px;
 }
 
 .list__item > a {
@@ -69,7 +75,7 @@
   text-decoration: none;
   border: 2px solid white;
   font-weight: bold;
-  padding: 10px 20px;
+  padding: 10px 40px;
   border-radius: 10px;
 }
 
@@ -94,7 +100,7 @@
 
 .main {
   position: absolute;
-  top: 20%;
+  top: 25%;
   left: 22%;
 }
 .content {
@@ -109,18 +115,19 @@
   display: flex;
   justify-content: center;
   border: 1px solid white;
-  padding: 8px 24px;
-  border-radius: 10px;
+  padding: 6px 20px;
+  border-radius: 8px;
   margin: auto;
   position: relative;
+  font-weight: 600;
   font-size: 12px;
-  font-weight: 800;
+  line-height: 14px;
 }
 
 .crown {
   position: absolute;
-  top: -68%;
-  right: -20%;
+  top: -81%;
+  right: 0%;
 }
 
 .easier {
@@ -128,8 +135,11 @@
   display: flex;
   justify-content: center;
   text-align: center;
-  font-size: 50px;
-  line-height: 73px;
+  font-size: 45px;
+  line-height: 67px;
+  font-weight: 500;
+  font-stretch: ultra-expanded;
+  margin-top: 20px;
 }
 
 .save {
@@ -146,7 +156,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 1rem;
+  margin-top: 40px;
   padding-bottom: 10px;
 }
 

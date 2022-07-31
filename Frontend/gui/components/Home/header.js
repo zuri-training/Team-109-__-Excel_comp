@@ -7,18 +7,20 @@ export default function Header() {
   return (
     <header className={styles.header}>
       <nav className={styles.nav}>
-        <h2 className={styles.logo}>CompareX</h2>
-        <ul className={styles.list}>
-          <li className={styles.list__item}>
-            <a href="#work">How it works?</a>
-          </li>
-          <li className={styles.list__item}>
-            <a href="#client">Our Clients</a>
-          </li>
-          <li className={styles.list__item}>
-            <a href="#compare">Reviews</a>
-          </li>
-        </ul>
+        <div className={styles.logo__container}>
+          <h2 className={styles.logo}>CompareX</h2>
+          <ul className={styles.list}>
+            <li className={styles.list__item}>
+              <a href="#work">How it works?</a>
+            </li>
+            <li className={styles.list__item}>
+              <a href="#client">Our Clients</a>
+            </li>
+            <li className={styles.list__item}>
+              <a href="#compare">Reviews</a>
+            </li>
+          </ul>
+        </div>
         <span>
           <a href="#" className={styles.btn_1}>
             Sign In
@@ -40,13 +42,13 @@ export default function Header() {
           <h1 className={styles.easier}>
             Comparing Excel Sheets
             <br />
-            Just Got Easier
+            Just Got Easier!
           </h1>
           <p className={styles.save}>
             Save your time and build and build productivity with the world-best
             performing excel
             <br />
-            comparison tool
+            file comparison tool
           </p>
           <span className={styles.use}>
             <a href="#" className={styles.btn_3}>
