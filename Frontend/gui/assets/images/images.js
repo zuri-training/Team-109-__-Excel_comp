@@ -12,6 +12,9 @@ import atinuke from "./Atinuke.svg";
 import damilare from "./Damilare.svg";
 import drag from "./drag.svg";
 import michael from "./michael.svg";
+import woman from "./woman.svg";
+import dashboard from "./dashboard.svg";
+import or from "./OR-line.svg";
 
 const images = {
   lovedBy,
@@ -27,7 +30,10 @@ const images = {
   atinuke,
   damilare,
   drag,
+  woman,
   michael,
+  dashboard,
+  or,
 };
 
 export default images;
