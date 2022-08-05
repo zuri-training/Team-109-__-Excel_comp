@@ -99,7 +99,7 @@ export default function Section() {
             ) : (
               <div className={styles.terms}></div>
             )}
-            <label for="compare rows" className={styles.terms__label}>
+            <label htmlFor="compare rows" className={styles.terms__label}>
               Compare rows for duplicate
             </label>
           </div>
@@ -112,7 +112,7 @@ export default function Section() {
             ) : (
               <div className={styles.terms}></div>
             )}
-            <label for="convert" className={styles.terms__label}>
+            <label htmlFor="convert" className={styles.terms__label}>
               Convert CSV files to XSLX and vice-versa
             </label>
           </div>
@@ -125,7 +125,7 @@ export default function Section() {
             ) : (
               <div className={styles.terms}></div>
             )}
-            <label for="compare_andmerge" className={styles.terms__label}>
+            <label htmlFor="compare_andmerge" className={styles.terms__label}>
               Compare and merge
             </label>
           </div>
@@ -138,7 +138,7 @@ export default function Section() {
             ) : (
               <div className={styles.terms}></div>
             )}
-            <label for="compare all" className={styles.terms__label}>
+            <label htmlFor="compare all" className={styles.terms__label}>
               Compare All
             </label>
           </div>
