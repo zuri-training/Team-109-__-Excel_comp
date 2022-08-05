@@ -1,0 +1,218 @@
+.container {
+  background-color: #ffffff;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 10px 30px;
+  position: relative;
+  z-index: 5;
+}
+
+.logo {
+  position: relative;
+  width: 32px;
+  height: 32px;
+}
+
+.header a {
+  color: #015239;
+  cursor: pointer;
+}
+
+.h5 {
+  font-family: "Passenger Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  color: rgba(22, 22, 22, 0.6);
+  margin: 0;
+}
+
+.form__container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.parent_container {
+  width: 440px;
+  background: #ffffff;
+  box-shadow: 0px 8px 32px #eeeeee, 0px 4px 8px rgba(66, 71, 44, 0.04),
+    0px 0px 1px rgba(66, 71, 44, 0.32);
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  z-index: 2;
+  background-color: white;
+}
+
+.form {
+  width: 90%;
+  box-sizing: border-box;
+}
+
+.parent_container h2 {
+  font-family: "Passenger Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 34px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  color: #161616;
+}
+
+.parent_container p {
+  width: 100%;
+  height: 40px;
+  margin-top: 10px;
+  font-family: "Passenger Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  align-items: center;
+  text-align: center;
+  color: rgba(22, 22, 22, 0.6);
+}
+.google {
+  font-family: "Passenger Sans";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0.5px solid black;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 18px;
+}
+
+.frame {
+  margin-top: 20px;
+  margin-bottom: 15px;
+  text-align: center;
+  font-family: "Passenger Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 14px;
+  color: rgba(22, 22, 22, 0.6);
+}
+
+.label {
+  display: flex;
+  font-family: "Passenger Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  color: rgba(22, 22, 22, 0.6);
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.input {
+  width: 100%;
+  border-radius: 5px;
+  outline: none;
+  font-size: 16px;
+  height: 2.6em;
+  border: 1px solid rgba(22, 22, 22, 0.6);
+  border-radius: 8px;
+  box-sizing: border-box;
+  padding-left: 15px;
+}
+
+.button {
+  background: #015239;
+  border: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #ffffff;
+  width: 100%;
+  font-size: 16px;
+  height: 2.6em;
+  cursor: pointer;
+}
+
+.dashboard__background {
+  width: 100%;
+  height: 228.99px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.dashboard__svg {
+  position: relative;
+  width: 80%;
+  height: 80%;
+  right: 60px;
+}
+
+.remember__me {
+  margin-top: 20px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+}
+
+.terms__label {
+  font-family: "Passenger Sans";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: #015239;
+  margin-left: 3px;
+}
+
+.terms {
+  width: 16px;
+  height: 16px;
+  border: 3px solid #015239;
+  border-radius: 2px;
+  cursor: pointer;
+  border-color: #015239;
+  color: #015239;
+}
+
+.check__icon {
+  position: relative;
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.forgot__password {
+  font-family: "Passenger Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  color: #015239;
+  cursor: pointer;
+}
