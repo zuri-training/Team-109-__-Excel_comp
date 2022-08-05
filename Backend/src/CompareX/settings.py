@@ -43,6 +43,8 @@ INSTALLED_APPS = [
     #Third party aps
     'rest_framework',
     'django_extensions',
+    'apps.accounts.apps.AccountsConfig',
+    
 ]
 
 MIDDLEWARE = [
@@ -75,6 +77,9 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'CompareX.wsgi.application'
 
+
+#Authentication
+AUTH_USER_MODEL = "accounts.CustomUSer"
 
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
