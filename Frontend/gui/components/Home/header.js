@@ -11,15 +11,17 @@ export default function Header() {
         <div className={styles.logo__container}>
           <h2 className={styles.logo}>CompareX</h2>
           <ul className={styles.list}>
-            <li className={styles.list__item}>
-              <a href="#work">How it works?</a>
-            </li>
-            <li className={styles.list__item}>
-              <a href="#client">Our Clients</a>
-            </li>
-            <li className={styles.list__item}>
-              <a href="#compare">Reviews</a>
-            </li>
+            <a className={styles.list__item} href="#work">
+              How it works?
+            </a>
+
+            <a className={styles.list__item} href="#client">
+              Our Clients
+            </a>
+
+            <a className={styles.list__item} href="#compare">
+              Reviews
+            </a>
           </ul>
         </div>
         <span>

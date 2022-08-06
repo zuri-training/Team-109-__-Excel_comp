@@ -18,6 +18,7 @@
 }
 
 .how {
+  font-family: "Manrope";
   text-align: center;
   margin-top: 40px;
   color: #1c2c27;
@@ -32,6 +33,7 @@
 }
 
 .steps {
+  font-family: "Passenger Sans";
   display: flex;
   justify-content: center;
   text-align: center;
@@ -58,6 +60,7 @@
 }
 
 .compare {
+  font-family: "Manrope";
   text-align: center;
   font-family: "Manrope";
   font-style: normal;
@@ -378,8 +381,8 @@
     0px 0px 1px rgba(66, 71, 44, 0.32);
   height: 148px;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 
 .question__inner {
@@ -397,6 +400,7 @@
   line-height: 38px;
   font-weight: 500;
   color: rgba(22, 22, 22, 0.8);
+  margin: 0%;
 }
 
 .question p {
@@ -406,4 +410,5 @@
   font-size: 18px;
   line-height: 22px;
   color: rgba(22, 22, 22, 0.8);
+  margin: 0%;
 }
