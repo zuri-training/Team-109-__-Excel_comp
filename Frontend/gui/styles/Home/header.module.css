@@ -1,16 +1,3 @@
-/*@fontface {
-  font-family: "Lucida Sans";
-  src: url("fonts/Lucida-Sans.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-@fontface {
-  font-family: "Passenger Sans";
-  src: url("fonts/PassengerSans-Regular.eot"),
-    url("fonts/PassengerSans-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}*/
 .header {
   background-color: #015239;
   width: 100%;
