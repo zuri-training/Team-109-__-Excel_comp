@@ -84,3 +84,10 @@ View the live demo of the project [here](https://team-109-excel-comp.vercel.app/
     > This will check for any changes that have been made to the original repository, it will then bring those changes to your local machine and merge (merge) the changes.
 
 - ### How to get started with the Frontend
+
+  After cloning and pulling the latest changes, from the base folder(the folder created when you cloned)
+  run `cd Frontend/gui`
+  run `npm run dev`
+
+  open your browser and go to `http://localhost:3000/`
+  there you'll be able to view the app and see your changes as you code.
