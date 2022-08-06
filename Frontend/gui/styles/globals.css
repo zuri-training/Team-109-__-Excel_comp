@@ -1,34 +1,32 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 
-/* updated */
-
 @font-face {
   font-family: "Lucida Sans";
-  src: url("../assets/fonts/Lucida-Sans.Ttf") format("truetype");
+  src: url("../assets/fonts/Lucida-Sans.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Passenger Sans";
-  src: url("../assets/fonts/PassengerSans-Regular.Eot"),
-    url("../assets/fonts/PassengerSans-Regular.Ttf") format("truetype");
+  src: url("../assets/fonts/PassengerSans-Regular.eot"),
+    url("../assets/fonts/PassengerSans-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Passenger Sans";
-  src: url("../assets/fonts/PassengerSans-Bold.Eot"),
-    url("../assets/fonts/PassengerSans-Bold.Ttf") format("truetype");
+  src: url("../assets/fonts/PassengerSans-Bold.eot"),
+    url("../assets/fonts/PassengerSans-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Avenir";
-  src: url("../assets/fonts/AvenirLTStd-Book.Otf");
+  src: url("../assets/fonts/AvenirLTStd-Book.otf");
   font-weight: normal;
   font-style: normal;
 }
