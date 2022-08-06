@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 import Image from "next/image";
 import styles from "../../styles/Home/header.module.css";
 import images from "../../assets/images/images";
@@ -22,12 +23,12 @@ export default function Header() {
           </ul>
         </div>
         <span>
-          <a href="#" className={styles.btn_1}>
-            Sign In
-          </a>
-          <a href="#" className={styles.btn_2}>
-            Sign Up for free
-          </a>
+          <Link href={"/login"}>
+            <span className={styles.btn_1}>Sign In</span>
+          </Link>
+          <Link href={"/signup"}>
+            <span className={styles.btn_2}>Sign Up for free</span>
+          </Link>
         </span>
       </nav>
 
@@ -51,9 +52,9 @@ export default function Header() {
             file comparison tool
           </p>
           <span className={styles.use}>
-            <a href="#" className={styles.btn_3}>
-              Use for free
-            </a>
+            <Link href={"/signup"}>
+              <span className={styles.btn_3}>Use for free</span>
+            </Link>
             <div className={styles.watch__demo}>
               <a href="#view" className={styles.btn_4}>
                 Watch Demo
