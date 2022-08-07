@@ -4,6 +4,8 @@ import styles from "../../styles/Home/section.module.css";
 import images from "../../assets/images/images";
 import icons from "../../assets/icons/icons";
 import { useState } from "react";
+import Link from "next/link";
+import Dropzone from "react-dropzone";
 
 export default function Section() {
   const [modal, setModal] = useState(false);
@@ -48,26 +50,37 @@ export default function Section() {
           </h4>
         </div>
         <div className={styles.main_upload}>
-          <div className={styles.upload}>
-            <div className={styles.upload_one}>
-              <div className={styles.drag_image}>
-                <Image src={images.drag} />
+          <Dropzone onDrop={(acceptedFiles) => setModal(true)}>
+            {({ getRootProps, getInputProps }) => (
+              <div className={styles.upload} {...getRootProps()}>
+                <div className={styles.upload_one}>
+                  <div className={styles.drag_image}>
+                    <Image src={images.drag} />
+                  </div>
+                  <div className={styles.drag_upload}>
+                    Click or drag and drop to upload your file here
+                  </div>
+                </div>
+                <input {...getInputProps()} />
               </div>
-              <div className={styles.drag_upload}>
-                <a href="">Click or drag and drop to upload your file here</a>
+            )}
+          </Dropzone>
+          <Dropzone onDrop={(acceptedFiles) => setModal(true)}>
+            {({ getRootProps, getInputProps }) => (
+              <div className={styles.upload} {...getRootProps()}>
+                <div className={styles.upload_one}>
+                  <div className={styles.drag_image}>
+                    <Image src={images.drag} />
+                  </div>
+                  <div className={styles.drag_upload}>
+                    Click or drag and drop to upload your file here
+                  </div>
+                </div>
+                <input {...getInputProps()} />
               </div>
-            </div>
-          </div>
-          <div className={styles.upload}>
-            <div className={styles.upload_one}>
-              <div className={styles.drag_image}>
-                <Image src={images.drag} />
-              </div>
-              <div className={styles.drag_upload}>
-                <a href="">Click or drag and drop to upload your file here</a>
-              </div>
-            </div>
-          </div>
+            )}
+          </Dropzone>
+
           {modal && (
             <div className={styles.error__modal}>
               <div className={styles.modal}>
@@ -82,9 +95,11 @@ export default function Section() {
                   Tool is only available to Registered Users. Quickly sign up
                   with your Email Address to compare your Excel Files for free!
                 </p>
-                <button className={styles.modal__button}>
-                  Sign Up for free
-                </button>
+                <Link href={"/signup"}>
+                  <button className={styles.modal__button}>
+                    Sign Up for free
+                  </button>
+                </Link>
               </div>
             </div>
           )}
