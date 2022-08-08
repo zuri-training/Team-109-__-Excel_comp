@@ -20,3 +20,15 @@ class CustomUser(AbstractUser):
     
     def __str__(self):
         return self.email, self.name
+
+# class file(models.Model):
+    
+
+# class operation(models.Model):
+#     file = models.OneToOneField(file, )
+
+# class profile(models.Model):
+#     user = models.OneToOneField(CustomUser, on_delete=models.CASCADE, related_name="user_profile")
+
+#     def __str__(self):
+#         return self.name, self.email
