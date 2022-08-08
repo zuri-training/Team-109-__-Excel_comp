@@ -1,0 +1,104 @@
+.general {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: white;
+  width: 100%;
+  height: 100%;
+}
+/*nav bar*/
+.nav {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0px 40px;
+}
+
+.list {
+  margin-left: 40px;
+  display: flex;
+}
+
+.link {
+  font-family: "Passenger Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: #015239;
+  margin-right: 20px;
+}
+/*logo*/
+.logo {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  color: #015239;
+}
+/* Button*/
+.sign {
+  display: flex;
+  justify-content: center;
+}
+
+.btn_1 {
+  background-color: white;
+  border-color: #015239;
+  color: #015239;
+  border-radius: 8px;
+  width: 6vw;
+  height: 3vw;
+  margin-left: 30rem;
+}
+.btn_2 {
+  background-color: #015239;
+  border-color: #015239;
+  color: white;
+  border-radius: 8px;
+  width: 9vw;
+  height: 3vw;
+  margin-left: 10px;
+}
+
+.btn_3 {
+  font-weight: bold;
+  font-size: 1vw;
+  background-color: #015239;
+  border-color: #015239;
+  color: white;
+  border-radius: 8px;
+  width: 13vw;
+  height: 3vw;
+  cursor: pointer;
+}
+
+.btn_1,
+.btn_2 {
+  cursor: pointer;
+}
+
+.page {
+  display: flex;
+  justify-content: center;
+  margin-top: 9rem;
+  margin-bottom: 3rem;
+  font-size: 4rem;
+  font-family: "Passenger Sans";
+  font-weight: 550;
+  color: #161616;
+}
+
+.could {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 4rem;
+  font-family: "Passenger Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  color: rgba(22, 22, 22, 0.8);
+}

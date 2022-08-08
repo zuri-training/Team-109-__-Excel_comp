@@ -1,16 +1,3 @@
-/*@fontface {
-  font-family: "Lucida Sans";
-  src: url("fonts/Lucida-Sans.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-@fontface {
-  font-family: "Passenger Sans";
-  src: url("fonts/PassengerSans-Regular.eot"),
-    url("fonts/PassengerSans-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}*/
 .header {
   background-color: #015239;
   width: 100%;
@@ -22,14 +9,13 @@
   padding: 0%;
   margin: 0%;
 }
-
 .nav {
   width: 91%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 32px;
   box-sizing: border-box;
+  padding-top: 22px;
 }
 
 .logo__container {
@@ -38,10 +24,11 @@
 }
 
 .logo {
+  font-family: "Manrope";
   color: white;
   font-size: 30px;
   cursor: pointer;
-  margin-top: auto;
+  margin: 0%;
 }
 
 .list {
@@ -49,37 +36,37 @@
   list-style-type: none;
   display: flex;
   align-items: center;
-  margin-left: 30px;
+  margin: 0%;
+  margin-left: 10px;
 }
 
 .list__item {
-  list-style-type: none;
-  display: inline-block;
+  font-family: "Passenger Sans";
   padding: 0px 15px;
-}
-
-.list__item > a {
   color: white;
   text-decoration: none;
   font-weight: bold;
   text-transform: capitalize;
 }
 
-.list__item > a:hover {
+.list__item:hover {
   color: red;
   transition: 0.4s;
 }
 
 .btn_1 {
+  font-family: "Passenger Sans";
   color: white;
   text-decoration: none;
   border: 2px solid white;
   font-weight: bold;
   padding: 10px 40px;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 .btn_2 {
+  font-family: "Passenger Sans";
   background-color: white;
   color: #015239;
   text-decoration: none;
@@ -88,6 +75,7 @@
   padding: 10px 20px;
   border-radius: 10px;
   margin-left: 10px;
+  cursor: pointer;
 }
 
 .btn_1 a:hover {
@@ -108,6 +96,7 @@
 }
 
 .tool {
+  font-family: "Passenger Sans";
   background-color: white;
   width: -moz-fit-content;
   width: fit-content;
@@ -131,6 +120,7 @@
 }
 
 .easier {
+  font-family: "Manrope";
   color: white;
   display: flex;
   justify-content: center;
@@ -143,6 +133,7 @@
 }
 
 .save {
+  font-family: "Passenger Sans";
   color: white;
   font-size: 15px;
   line-height: 150%;
@@ -161,6 +152,7 @@
 }
 
 .btn_3 {
+  font-family: "Passenger Sans";
   background-color: white;
   color: #015239;
   text-decoration: none;
@@ -169,9 +161,11 @@
   border-radius: 10px;
   font-size: 14px;
   font-weight: 700;
+  cursor: pointer;
 }
 
 .watch__demo {
+  font-family: "Passenger Sans";
   position: relative;
   display: flex;
   align-items: center;

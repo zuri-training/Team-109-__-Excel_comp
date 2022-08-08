@@ -3,3 +3,8 @@ djangorestframework
 django_extensions
 python-decouple
 Pandas and Numpy libraries
+djoser
+djangorestframework_simplejwt
+psycopg2 
+psycopg2-binary
+django-cors-headers
