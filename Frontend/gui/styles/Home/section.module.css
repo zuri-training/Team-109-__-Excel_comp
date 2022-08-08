@@ -1,11 +1,3 @@
-@font-face {
-  font-family: "Passenger Sans";
-  src: url("../../assets/fonts/PassengerSans-Regular.eot"),
-    url("../../assets/fonts/PassengerSans-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
 .section {
   margin-top: 20rem;
   display: flex;
@@ -26,6 +18,7 @@
 }
 
 .how {
+  font-family: "Manrope";
   text-align: center;
   margin-top: 40px;
   color: #1c2c27;
@@ -40,6 +33,7 @@
 }
 
 .steps {
+  font-family: "Passenger Sans";
   display: flex;
   justify-content: center;
   text-align: center;
@@ -66,6 +60,7 @@
 }
 
 .compare {
+  font-family: "Manrope";
   text-align: center;
   font-family: "Manrope";
   font-style: normal;
@@ -104,9 +99,12 @@
   align-items: center;
   justify-content: center;
   border-radius: 24px;
+  cursor: pointer;
 }
 
 .upload_one {
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -116,9 +114,6 @@
 .drag_upload {
   width: 85%;
   text-align: center;
-}
-
-.drag_upload a {
   color: rgba(22, 22, 22, 0.5);
   font-style: normal;
   font-weight: 400;
@@ -128,6 +123,7 @@
   font-style: normal;
   font-weight: 400;
   text-decoration: underline;
+  cursor: pointer;
 }
 
 .error__modal {
@@ -196,6 +192,7 @@
   text-align: center;
   color: #ffffff;
   margin-top: 24px;
+  cursor: pointer;
 }
 
 .check {
@@ -384,8 +381,8 @@
     0px 0px 1px rgba(66, 71, 44, 0.32);
   height: 148px;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 
 .question__inner {
@@ -403,6 +400,7 @@
   line-height: 38px;
   font-weight: 500;
   color: rgba(22, 22, 22, 0.8);
+  margin: 0%;
 }
 
 .question p {
@@ -412,4 +410,5 @@
   font-size: 18px;
   line-height: 22px;
   color: rgba(22, 22, 22, 0.8);
+  margin: 0%;
 }

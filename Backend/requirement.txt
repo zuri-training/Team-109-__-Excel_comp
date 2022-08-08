@@ -2,3 +2,8 @@ Django
 djangorestframework
 django_extensions
 python-decouple
+djoser
+djangorestframework_simplejwt
+psycopg2 
+psycopg2-binary
+django-cors-headers
