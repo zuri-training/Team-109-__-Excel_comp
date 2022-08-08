@@ -89,6 +89,7 @@
   color: rgba(22, 22, 22, 0.6);
 }
 .google {
+  font-family: "Passenger Sans";
   display: flex;
   justify-content: center;
   align-items: center;
