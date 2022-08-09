@@ -48,7 +48,7 @@ INSTALLED_APPS = [
 
     'django_extensions',
     'apps.accounts.apps.AccountsConfig',
-    
+    'apps.compare.apps.CompareConfig',
 ]
 
 MIDDLEWARE = [
@@ -223,6 +223,10 @@ STATIC_URL = 'static/'
 #     os.path.join(BASE_DIR, 'build/static')
 # ]
 # STATIC_ROOT = os.path.join(BASE_DIR,'static')
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR/ 'media'
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field

@@ -2,6 +2,8 @@ Django
 djangorestframework
 django_extensions
 python-decouple
+pandas
+numpy
 djoser
 djangorestframework_simplejwt
 psycopg2 
