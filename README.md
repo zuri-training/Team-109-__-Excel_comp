@@ -47,7 +47,7 @@ View the live demo of the project [here](https://team-109-excel-comp.vercel.app/
 
 - #### Configure the upstream
 
-  Now that you have the local copy of compareX. Theres more than one developer contributing to the project, so you have to update your local copy very frequently. Therefore, you need to connect your local copy to the original repository. To do that :
+  Now that you have the local copy of compareX. There's more than one developer contributing to the project, so you have to update your local copy very frequently. Therefore, you need to connect your local copy to the original repository. To do that :
 
   - go to your local machine terminal, in the project folder
   - run `git remote add upstream https://github.com/zuri-training/Team-109-__-Excel_comp.git`
