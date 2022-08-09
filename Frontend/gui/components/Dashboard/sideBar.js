@@ -8,43 +8,50 @@ import { useEffect, useState } from "react";
 export default function SideBar() {
   const [expanded, setExpanded] = useState(false);
   const [showText, setShowText] = useState(false);
-  const [action, setAction] = useState("");
+  const [action, setAction] = useState("out");
 
   const sidebar = useSpring({
     width: expanded ? "16%" : "5%",
-    config: { duration: 1000 },
+    config: { duration: 600 },
     onRest: () => {
       if (action === "over") setShowText(true);
     },
   });
 
+  const expandIcon = useSpring({
+    transform: expanded ? "rotate(180deg)" : "rotate(0deg)",
+    config: { duration: 600 },
+  });
+
   const buttons = useSpring({
     width: expanded ? "78%" : "82%",
-    config: { duration: 1000 },
+    config: { duration: 600 },
   });
 
   const animateText = useSpring({
     display: "inline-block",
   });
 
-  const handleMouseOver = () => {};
-
-  const handleMouseAway = () => {};
+  const handleExpand = () => {
+    if (action === "out") {
+      setAction("over");
+      setExpanded(true);
+    } else {
+      setAction("out");
+      setShowText(false);
+      setExpanded(false);
+    }
+  };
 
   return (
-    <animated.div
-      className={styles.container}
-      style={sidebar}
-      onMouseOver={() => {
-        setAction("over");
-        setExpanded(true);
-      }}
-      onMouseLeave={() => {
-        setAction("out");
-        setShowText(false);
-        setExpanded(false);
-      }}
-    >
+    <animated.div className={styles.container} style={sidebar}>
+      <animated.div
+        className={styles.expand}
+        onClick={handleExpand}
+        style={expandIcon}
+      >
+        <Image alt="logo" src={icons.expand} layout="fill" />
+      </animated.div>
       <div className={styles.logo}>
         <Image alt="logo" src={icons.logo} layout="fill" />
       </div>
