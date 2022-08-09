@@ -90,5 +90,5 @@ View the live demo of the project [here](https://team-109-excel-comp.vercel.app/
   run `npm run dev`
 
   open your browser and go to `http://localhost:3000/`
-  there you'll be able to view the app and see your changes as you code.
+  there you'll be able to view the app and see your changes as you code
   
