@@ -2,4 +2,3 @@ Django
 djangorestframework
 django_extensions
 python-decouple
-Pandas and Numpy libraries
