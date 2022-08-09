@@ -32,7 +32,7 @@ View the live demo of the project [here](https://team-109-excel-comp.vercel.app/
 
 - #### Fork your own copy of the Repository
 
-  The first thing you will want to do is fork [this](https://github.com/zuri-training/Team-109-__-Excel_comp) repository. What this mean, is that you get your own copy of this repository. You can then safely make changes to your own copy, and then later, you can submit your changes, and tell the team lead to combine (merge) the changes you made to the main repository. Here is a [tutorial](https://www.howtogeek.com/759384/how-to-fork-a-github-repository/#:~:text=To%20fork%20a%20repo%2C%20log%20in%20to%20your,been%20forked.%20Go%20ahead%20and%20click%20that%20button.) showing you how to do that
+  The first thing you will want to do is fork [this](https://github.com/zuri-training/Team-109-__-Excel_comp) repository. What this means, is that you get your own copy of this repository. You can then safely make changes to your own copy, and then later, you can submit your changes, and tell the team lead to combine (merge) the changes you made to the main repository. Here is a [tutorial](https://www.howtogeek.com/759384/how-to-fork-a-github-repository/#:~:text=To%20fork%20a%20repo%2C%20log%20in%20to%20your,been%20forked.%20Go%20ahead%20and%20click%20that%20button.) showing you how to do that
 
 - #### Clone the Repository on your Local Machine
 
@@ -47,7 +47,7 @@ View the live demo of the project [here](https://team-109-excel-comp.vercel.app/
 
 - #### Configure the upstream
 
-  Now that you have the local copy of compareX. Theres more than one developer contributing to the project, so you have to update your local copy very frequently. Therefore, you need to connect your local copy to the original repository. To do that :
+  Now you have the local copy of compareX. There's more than one developer contributing to the project, so you have to update your local copy very frequently. Therefore, you need to connect your local copy to the original repository. To do that :
 
   - go to your local machine terminal, in the project folder
   - run `git remote add upstream https://github.com/zuri-training/Team-109-__-Excel_comp.git`
