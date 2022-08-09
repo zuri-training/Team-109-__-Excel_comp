@@ -12,7 +12,7 @@ CompareX is a system under development to serve the following functionalities
 - remove duplicates and return 2 files
 - highlight duplicates and return two files
 
-View the live demo of the project [here](https://team-109-excel-comp.vercel.app/)
+live demo of the project [here](https://team-109-excel-comp.vercel.app/)
 
 ## Resources
 
