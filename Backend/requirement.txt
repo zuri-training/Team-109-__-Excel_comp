@@ -1,4 +1,11 @@
 Django
 djangorestframework
 django_extensions
+<<<<<<< HEAD
 python-decouple
+=======
+python-decouple
+djoser
+djangorestframework_simplejwt
+psycopg2 
+psycopg2-binary
