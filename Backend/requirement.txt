@@ -6,3 +6,4 @@ djoser
 djangorestframework_simplejwt
 psycopg2 
 psycopg2-binary
+django-cors-headers
