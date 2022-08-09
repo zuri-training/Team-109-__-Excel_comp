@@ -2,7 +2,7 @@
 
 Excel file content comparism system
 
-Project name - CompareX
+Project Name - CompareX
 
 CompareX is a system under development to serve the following functionalities
 
