@@ -6,7 +6,7 @@ Project name - compareX
 
 CompareX is a system under development to serve the following functionalities
 
-- convert csv file to xlsx
+- convert csv file to xlsx and vice versa
 - Highlight duplicates in a single file
 - remove duplicates and return return a single file
 - remove duplicates and return 2 files
@@ -91,3 +91,4 @@ View the live demo of the project [here](https://team-109-excel-comp.vercel.app/
 
   open your browser and go to `http://localhost:3000/`
   there you'll be able to view the app and see your changes as you code.
+  
