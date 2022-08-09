@@ -1,18 +1,18 @@
-# CompareX--- Zuri project Team 109
+# CompareX--- Zuri project Team_109
 
 Excel file content comparism system
 
-Project name - compareX
+Project name - CompareX
 
 CompareX is a system under development to serve the following functionalities
 
-- convert csv file to xlsx
+- Convert csv file to xlsx and vice versa
 - Highlight duplicates in a single file
-- remove duplicates and return return a single file
-- remove duplicates and return 2 files
-- highlight duplicates and return two files
+- Remove duplicates and return return a single file
+- Remove duplicates and return 2 files
+- Highlight duplicates and return two files.
 
-View the live demo of the project [here](https://team-109-excel-comp.vercel.app/)
+View the live demo of the Project [here](https://team-109-excel-comp.vercel.app/)
 
 ## Resources
 
@@ -90,4 +90,5 @@ View the live demo of the project [here](https://team-109-excel-comp.vercel.app/
   run `npm run dev`
 
   open your browser and go to `http://localhost:3000/`
-  there you'll be able to view the app and see your changes as you code.
+  there you'll be able to view the app and see your changes as you code
+  
