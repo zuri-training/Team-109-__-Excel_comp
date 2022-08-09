@@ -18,6 +18,13 @@ import sort from "./sort.svg";
 import order from "./order.svg";
 import google from "./google.svg";
 import signupLogo from "./signup-logo.svg";
+import triangle from "./triangle.svg";
+import expand from "./expand.svg";
+import notes from "./notes.svg";
+import drag from "./drag.svg";
+import elipse from "./elipse.svg";
+import box from "./box.svg";
+import menu from "./menu.svg";
 
 const icons = {
   cancel,
@@ -40,6 +47,13 @@ const icons = {
   order,
   google,
   signupLogo,
+  triangle,
+  expand,
+  notes,
+  drag,
+  elipse,
+  box,
+  menu,
 };
 
 export default icons;

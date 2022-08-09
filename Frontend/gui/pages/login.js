@@ -5,9 +5,16 @@ import styles from "../styles/login.module.css";
 import images from "../assets/images/images";
 import icons from "../assets/icons/icons";
 import { useState } from "react";
+import axios from "axios";
 
 export default function Login() {
   const [ticked, setTicked] = useState(false);
+
+  const handleClick = () => {
+    axios.get("http://127.0.0.1:8000/auth/users").then((res) => {
+      console.log(res);
+    });
+  };
 
   return (
     <div className={styles.container}>
@@ -66,6 +73,7 @@ export default function Login() {
               type="button"
               value="Get Started"
               className={styles.button}
+              onClick={handleClick}
             />
           </form>
         </div>
