@@ -36,7 +36,7 @@ View the live demo of the Project [here](https://team-109-excel-comp.vercel.app/
 
 - #### Clone the Repository on your Local Machine
 
-  The next thing you want to do is clone (make a copy) of the Project on your profile, to your local machine (Laptop, PC, MacBook). To do that,
+  The next thing you want to do is clone (make a copy) of the Project on your profile, to your local machine (Laptop, PC, MacBook). To do that;
 
   - Copy the link of your fork of the repository (the one you forked).
   - Open the folder you want to work on your machine.
