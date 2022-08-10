@@ -1,0 +1,91 @@
+.sec {
+    margin-top: 5em;
+    margin-left: 10em;
+    padding: 0;
+  }
+  .proj {
+    margin-left: 1em;
+  }
+  .project {
+    margin-bottom: 5px;
+  }
+  .new {
+    display: flex;
+    flex-direction: row;
+  }
+  .task {
+    margin-left: 0.5em;
+    margin-bottom: 0.5em;
+    font-size: 30px;
+  }
+  .clinic {
+    border-radius: 5px;
+    background-color: rgb(231, 225, 225);
+    border: none;
+    height: 30px;
+    width: 30rem;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .upload {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .info {
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-right: 5px;
+    color: #51cf66;
+  }
+  
+  /*Drag and drop*/
+  .upper {
+    margin-left: 8em;
+  }
+  
+  .up {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 104px 32px;
+    border-radius: 10px;
+    background-color: #ecf5ed;
+    width: 30rem;
+    color: #161616;
+  }
+  
+  .drag {
+    color: #161616;
+    text-decoration: none;
+  }
+  
+  .like {
+    margin-left: 15em;
+    color: #161616;
+  }
+  
+  .check {
+    color: #161616;
+    cursor: pointer;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .btn {
+    margin-left: 10em;
+    padding: 16px;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+  }
+  button {
+    background-color: #015239;
+    margin-top: 40px;
+    cursor: pointer;
+    width: 12em;
+  }
+  
