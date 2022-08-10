@@ -1,36 +1,73 @@
 .container {
   height: 100%;
   width: 5%;
-  background-color: #1e5b48;
+  background-color: #ecf5ed;
   display: flex;
   flex-direction: column;
-  align-items: center;
   position: relative;
 }
 
-.expand {
-  margin-top: 10px;
-  width: 16px;
-  height: 16px;
-  position: relative;
-  align-self: flex-end;
-  margin-right: 10%;
-  cursor: pointer;
+.logo__box {
+  width: 100%;
+  height: 8%;
+  display: flex;
+  align-items: center;
+  border-bottom: 0.5px solid #8b8b8b;
 }
 
 .logo {
-  margin-top: 20px;
-  width: 38px;
-  height: 38px;
+  width: 21px;
+  height: 27px;
   position: relative;
-  align-self: flex-start;
-  margin-left: 10%;
+  margin-left: 17px;
+}
+
+.logo__name {
+  font-family: "Passenger Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  color: #161616;
+  margin-left: 10px;
+}
+
+.open__box {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-top: 50px;
+  margin-left: 17px;
+}
+
+.open__icon {
+  width: 21px;
+  height: 21px;
+  position: relative;
+}
+
+.collapse__text {
+  font-family: "Passenger Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: #161616;
+  margin-left: 5px;
 }
 
 .nav__buttons {
-  margin-top: 80px;
-  width: 82%;
+  margin-top: 50px;
+  width: 100%;
   align-self: flex-start;
+  box-sizing: border-box;
+}
+
+.nav__title {
+  font-family: "Passenger Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  color: #8b8b8b;
+  margin-bottom: 20px;
   margin-left: 22px;
 }
 
@@ -40,6 +77,8 @@
   display: flex;
   align-items: center;
   cursor: pointer;
+  box-sizing: border-box;
+  padding-left: 22px;
 }
 
 .icon__box {
@@ -54,9 +93,8 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  color: white;
   display: none;
-  margin-left: 20px;
+  margin-left: 8px;
 }
 
 .logout {
@@ -68,8 +106,7 @@
   cursor: pointer;
   display: flex;
   align-items: center;
-  justify-content: center;
-  align-self: center;
+  margin-left: 22px;
 }
 
 .logout__icon {

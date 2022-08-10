@@ -25,6 +25,10 @@ import drag from "./drag.svg";
 import elipse from "./elipse.svg";
 import box from "./box.svg";
 import menu from "./menu.svg";
+import ensure from "./ensure.svg";
+import folder from "./folder.svg";
+import cloudUpload from "./carbon_cloud-upload.svg";
+import collapse from "./collapse.svg";
 
 const icons = {
   cancel,
@@ -54,6 +58,10 @@ const icons = {
   elipse,
   box,
   menu,
+  ensure,
+  folder,
+  cloudUpload,
+  collapse,
 };
 
 export default icons;

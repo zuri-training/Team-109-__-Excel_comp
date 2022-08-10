@@ -3,13 +3,19 @@ import Image from "next/image";
 import styles from "../../styles/Dashboard/overview.module.css";
 import icons from "../../assets/icons/icons";
 
-export default function Overview() {
+export default function Overview(props) {
+  const { setView } = props;
   return (
     <div className={styles.container}>
       <h1 className={styles.header}>Overview</h1>
       <div className={styles.new__project}>
         <p className={styles.box__head}>What would you like to compare today</p>
-        <button className={styles.project__button}>Start New Project</button>
+        <button
+          className={styles.project__button}
+          onClick={() => setView("new task")}
+        >
+          Start New Project
+        </button>
         <div className={styles.info__box}>
           <div className={styles.upload__icon}>
             <Image alt="icon" layout="fill" src={icons.upload} />
