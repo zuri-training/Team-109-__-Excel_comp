@@ -6,6 +6,7 @@ Project Name - CompareX
 
 CompareX is a file comparison tool under development to serve the following functionalities
 
+main
 - Convert csv file to xlsx and vice versa
 - Highlight duplicates in a single file
 - Remove duplicates and return return a single file
