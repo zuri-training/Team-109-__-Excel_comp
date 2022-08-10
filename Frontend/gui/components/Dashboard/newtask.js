@@ -3,6 +3,7 @@ import Image from "next/image";
 import styles from "../../styles/Dashboard/newtask.module.css";
 import icons from "../../assets/icons/icons";
 import { useState } from "react";
+import Dropzone from "react-dropzone";
 
 export default function NewTask() {
   const [options, setOptions] = useState([false, false, false, false]);
@@ -33,14 +34,19 @@ export default function NewTask() {
           <Image src={icons.ensure} layout="fill" />
         </div>
       </div>
-      <div className={styles.up}>
-        <div className={styles.upload__icon}>
-          <Image src={icons.cloudUpload} layout="fill" />
-        </div>
-        <p className={styles.drag}>
-          Drag and drop or Upload all your Excel files here
-        </p>
-      </div>
+      <Dropzone onDrop={(acceptedFiles) => console.log(acceptedFiles)}>
+        {({ getRootProps, getInputProps }) => (
+          <div className={styles.up} {...getRootProps()}>
+            <div className={styles.upload__icon}>
+              <Image src={icons.cloudUpload} layout="fill" />
+            </div>
+            <p className={styles.drag}>
+              Drag and drop or Upload all your Excel files here
+            </p>
+            <input {...getInputProps()} />
+          </div>
+        )}
+      </Dropzone>
       <h3 className={styles.like}>What would you like to do? </h3>
 
       <div className={styles.check}>

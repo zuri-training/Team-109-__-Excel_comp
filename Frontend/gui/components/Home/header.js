@@ -77,11 +77,9 @@ export default function Header() {
           controls
           muted
         >
-          <source src="Images/DEMO VIDEO.svg" type="video/mp4" />
           <source
-            src="Images/DEMO VIDEO.svg"
-            type="video/ogg"
-            alt="Demo Video"
+            src="https://drive.google.com/file/d/1Ux75AsLNurFCyzIECd8lUZ9R9M-JLSfi/view?usp=sharing"
+            type="video/mp4"
           />
         </video>
       </main>
