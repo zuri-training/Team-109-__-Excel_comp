@@ -21,7 +21,7 @@ export default function Navbar() {
         <div className={styles.profile__pic}>
           <Image alt="user" layout="fill" src={icons.profile} />
         </div>
-        <span className={styles.username}>Anita Agwu</span>
+        <span className={styles.username}>No Name</span>
       </div>
     </div>
   );

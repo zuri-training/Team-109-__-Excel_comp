@@ -7,11 +7,23 @@ import Dropzone from "react-dropzone";
 
 export default function NewTask() {
   const [options, setOptions] = useState([false, false, false, false]);
+  const [file, setFile] = useState(false);
+  const [file2, setFile2] = useState(false);
 
   const handleCheckBoxClick = (index) => {
     var temp = [...options];
     temp[index] = !temp[index];
     setOptions(temp);
+  };
+
+  const handleUpload = (files) => {
+    if (file) {
+      let file = files[0];
+      setFile2(file);
+    } else {
+      let file = files[0];
+      setFile(file);
+    }
   };
 
   return (
@@ -34,15 +46,33 @@ export default function NewTask() {
           <Image src={icons.ensure} layout="fill" />
         </div>
       </div>
-      <Dropzone onDrop={(acceptedFiles) => console.log(acceptedFiles)}>
+      <Dropzone onDrop={(acceptedFiles) => handleUpload(acceptedFiles)}>
         {({ getRootProps, getInputProps }) => (
           <div className={styles.up} {...getRootProps()}>
-            <div className={styles.upload__icon}>
-              <Image src={icons.cloudUpload} layout="fill" />
-            </div>
-            <p className={styles.drag}>
-              Drag and drop or Upload all your Excel files here
-            </p>
+            {!file && (
+              <div className={styles.upload__icon}>
+                <Image src={icons.cloudUpload} layout="fill" />
+              </div>
+            )}
+            {file ? (
+              <div className={styles.files}>
+                <div className={styles.file__icon}>
+                  <Image src={icons.folder} layout="fill" />
+                </div>
+                {file2 && (
+                  <div
+                    className={styles.file__icon}
+                    style={{ marginLeft: "20px" }}
+                  >
+                    <Image src={icons.folder} layout="fill" />
+                  </div>
+                )}
+              </div>
+            ) : (
+              <p className={styles.drag}>
+                Drag and drop or Upload all your Excel files here
+              </p>
+            )}
             <input {...getInputProps()} />
           </div>
         )}

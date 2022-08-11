@@ -107,6 +107,18 @@
   font-size: 18px;
 }
 
+.files {
+  height: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+.file__icon {
+  height: 60px;
+  width: 60px;
+  position: relative;
+}
+
 .like {
   color: #161616;
   font-family: "Passenger Sans";
