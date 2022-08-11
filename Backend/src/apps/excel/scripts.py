@@ -5,6 +5,7 @@ input = input('Select:')
 
 excel_file = 'DocA.xlsx'
 
+#Dataframes
 df = pd.read_excel(excel_file)
 df.duplicated()
 df.loc[df.duplicated(), :]
