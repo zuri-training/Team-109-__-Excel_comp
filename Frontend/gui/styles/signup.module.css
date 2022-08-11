@@ -135,6 +135,16 @@
   padding-left: 15px;
 }
 
+.email__error {
+  display: flex;
+  font-family: "Passenger Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  color: red;
+  margin-top: 10px;
+}
+
 .button {
   background: #015239;
   border: none;
