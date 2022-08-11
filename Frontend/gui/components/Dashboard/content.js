@@ -5,16 +5,17 @@ import icons from "../../assets/icons/icons";
 import Navbar from "./navbar";
 import Overview from "./overview";
 import NewTask from "./newtask";
-import { useState } from "react";
+import Settings from "./settings";
 
-export default function Content() {
-  const [view, setView] = useState("overview");
+export default function Content(props) {
+  const { view, setView } = props;
 
   return (
     <div className={styles.container}>
       <Navbar />
-      {view === "overview" && <Overview setView={setView} />}
+      {view === "dashboard" && <Overview setView={setView} />}
       {view === "new task" && <NewTask />}
+      {view === "settings" && <Settings />}
     </div>
   );
 }

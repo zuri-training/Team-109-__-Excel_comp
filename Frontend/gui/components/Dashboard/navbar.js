@@ -19,7 +19,7 @@ export default function Navbar() {
       </div>
       <div className={styles.name__card}>
         <div className={styles.profile__pic}>
-          <Image alt="user" layout="fill" src={images.woman} />
+          <Image alt="user" layout="fill" src={icons.profile} />
         </div>
         <span className={styles.username}>Anita Agwu</span>
       </div>

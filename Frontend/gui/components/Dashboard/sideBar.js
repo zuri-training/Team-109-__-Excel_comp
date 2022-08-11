@@ -5,11 +5,11 @@ import icons from "../../assets/icons/icons";
 import { useSpring, animated } from "react-spring";
 import { useEffect, useState } from "react";
 
-export default function SideBar() {
+export default function SideBar(props) {
+  const { view, setView } = props;
   const [expanded, setExpanded] = useState(false);
   const [showText, setShowText] = useState(false);
   const [action, setAction] = useState("out");
-  const [selected, setSelected] = useState();
 
   const sidebar = useSpring({
     width: expanded ? "16%" : "5%",
@@ -84,10 +84,16 @@ export default function SideBar() {
               className={styles.nav__button__item}
               key={index}
               style={{
-                backgroundColor: selected === index ? "#9ECCA4" : "transparent",
-                borderLeft: selected === index ? "3px solid #014430" : "none",
+                backgroundColor:
+                  view === option.text.toLowerCase()
+                    ? "#9ECCA4"
+                    : "transparent",
+                borderLeft:
+                  view === option.text.toLowerCase()
+                    ? "3px solid #014430"
+                    : "none",
               }}
-              onClick={() => setSelected(index)}
+              onClick={() => setView(option.text.toLowerCase())}
             >
               <div className={styles.icon__box}>
                 <Image alt="icon" layout="fill" src={option.icon} />
