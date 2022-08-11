@@ -51,7 +51,7 @@ INSTALLED_APPS = [
 
     'django_extensions',
     'apps.accounts.apps.AccountsConfig',
-    
+    'apps.excel.apps.AccountsConfig',
 ]
 
 MIDDLEWARE = [
