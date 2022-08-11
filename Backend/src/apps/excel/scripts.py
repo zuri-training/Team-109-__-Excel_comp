@@ -15,7 +15,7 @@ df = df.loc[df.duplicated(keep=False), :]
 # function definition
 def highlight_cols(x):
       
-# copy df to new - original data is not changed
+# To copy df info to a new file 
     df = x.copy()
       
 # To highlight duplicated values in yellow
@@ -24,7 +24,7 @@ def highlight_cols(x):
 # To return file df with colour
     return df 
   
-print("Highlighted dataframe:")
+print("Returned rows file:")
 display = (df.style.apply(highlight_cols, axis = None))
 
 display.to_excel("Highlighted_Duplicates.xlsx")
