@@ -40,7 +40,7 @@ export default function Section() {
         </p>
       </span>
       <div className={styles.frame}>
-        <Image alt="frames" src={images.frame2} />
+        <Image alt="frames" src={images.frame2} layout="fill" />
       </div>
 
       <div className={styles.compare__box}>
@@ -169,11 +169,9 @@ export default function Section() {
           <Image src={images.followers} />
         </div>
 
-        <div className={styles.convinced}>
-          <h3>
-            Everyone <span>else is convinced</span>
-          </h3>
-        </div>
+        <h3 className={styles.convinced}>
+          Everyone <span style={{ color: "#161616" }}>else is convinced</span>
+        </h3>
 
         <div className={styles.reviews} id="compare">
           <div className={styles.review}>
@@ -233,11 +231,9 @@ export default function Section() {
       </div>
 
       <div className={styles.FAQ}>
-        <div className={styles.FAQ__header}>
-          <h4>
-            Frequently Asked <span>Questions.</span>
-          </h4>
-        </div>
+        <h4 className={styles.FAQ__header}>
+          Frequently Asked <span style={{ color: "#015239" }}>Questions.</span>
+        </h4>
         <div className={styles.questions}>
           <div className={styles.question} style={{ marginBottom: "32px" }}>
             <div className={styles.question__inner}>

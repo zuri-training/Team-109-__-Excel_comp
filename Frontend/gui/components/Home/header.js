@@ -3,8 +3,15 @@ import Link from "next/link";
 import Image from "next/image";
 import styles from "../../styles/Home/header.module.css";
 import images from "../../assets/images/images";
+import ReactPlayer from "react-player";
+import { useState, useEffect } from "react";
 
 export default function Header() {
+  const [hydrated, setHydrated] = useState(false);
+  useEffect(() => {
+    setHydrated(true);
+  }, []);
+
   return (
     <header className={styles.header}>
       <nav className={styles.nav}>
@@ -69,19 +76,16 @@ export default function Header() {
         </div>
         {/* End of Background */}
         {/* Video */}
-        <video
-          className={styles.video}
-          width="700"
-          height="400"
-          id="view"
-          controls
-          muted
-        >
-          <source
-            src="https://drive.google.com/file/d/1Ux75AsLNurFCyzIECd8lUZ9R9M-JLSfi/view?usp=sharing"
-            type="video/mp4"
+        {hydrated && (
+          <ReactPlayer
+            className={styles.video}
+            width="700px"
+            height="400px"
+            id="view"
+            url="https://www.youtube.com/watch?v=Y-Z21liJ1-U"
+            controls
           />
-        </video>
+        )}
       </main>
     </header>
   );
