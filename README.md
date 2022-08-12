@@ -95,5 +95,11 @@ develop
 
   open your browser and go to `http://localhost:3000/`
   there you'll be able to view the app and see your changes as you code
-  
 
+- ### How to get started with the Backend:  
+
+After cloning and pulling the latest changes, from the base folder(the folder created when you cloned)
+  run `cd Backend`
+  create a virtual environment(call it env)
+  activate your virtual environment
+  To install all dependencies: run 'pip install - requirement.txt'
