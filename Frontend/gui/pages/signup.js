@@ -4,8 +4,60 @@ import Image from "next/image";
 import styles from "../styles/signup.module.css";
 import images from "../assets/images/images";
 import icons from "../assets/icons/icons";
+import { useState, useEffect } from "react";
+import axios from "axios";
+import { useRouter } from "next/router";
 
 export default function SignUp() {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [invalid, setInvalid] = useState(false);
+  const router = useRouter();
+
+  function validateEmail(elementValue) {
+    var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+    return emailPattern.test(elementValue);
+  }
+
+  const handleEmail = () => {
+    var valid = validateEmail(email);
+    valid ? setInvalid(false) : setInvalid(true);
+  };
+
+  const handleSubmit = () => {
+    if (password.length >= 8) {
+      axios
+        .post("http://127.0.0.1:8000/auth/users/", {
+          name: name,
+          email: email,
+          password: password,
+          re_password: password,
+        })
+        .then((e) => {
+          console.log(e);
+          console.log("Succes!");
+          router.push("/login");
+        })
+        .catch((e) => {
+          console.log(e.response.data);
+          console.log("Failed!");
+          const error = Object.keys(e.response.data);
+          console.log(error);
+          alert(e.response.data[error[0]]);
+        });
+    } else {
+      alert("Password should be at least 8 chars long");
+    }
+  };
+
+  useEffect(() => {
+    const token = localStorage.getItem("Token");
+    if (token) {
+      router.push("/dashboard");
+    }
+  }, []);
+
   return (
     <div className={styles.container}>
       <nav className={styles.header}>
@@ -41,19 +93,37 @@ export default function SignUp() {
             <input
               className={styles.input}
               type="text"
-              placeholder=""
-              required
+              onChange={(e) => setName(e.target.value)}
             />
 
-            <label className={styles.label}>Email Address</label>
-            <input className={styles.input} type="email" required />
+            <label
+              className={styles.label}
+              style={{ color: invalid ? "red" : "rgba(22, 22, 22, 0.6)" }}
+            >
+              Email Address
+            </label>
+            <input
+              className={styles.input}
+              type="email"
+              onChange={(e) => setEmail(e.target.value)}
+              style={{ borderColor: invalid ? "red" : "rgba(22, 22, 22, 0.6)" }}
+              onBlur={handleEmail}
+            />
+            {invalid && (
+              <div className={styles.email__error}>Email not valid</div>
+            )}
 
             <label className={styles.label}>Password</label>
-            <input className={styles.input} type="password" required />
+            <input
+              className={styles.input}
+              type="password"
+              onChange={(e) => setPassword(e.target.value)}
+            />
             <input
               type="button"
               value="Get Started"
               className={styles.button}
+              onClick={handleSubmit}
             />
           </form>
         </div>

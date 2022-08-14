@@ -7,16 +7,14 @@ Project Name - CompareX
 CompareX is a file comparison tool under development to serve the following functionalities
 
 main
+
 - Convert csv file to xlsx and vice versa
 - Highlight duplicates in a single file
 - Remove duplicates and return return a single file
 - Remove duplicates and return 2 files
 - Highlight duplicates and return two files.
 
-main
 View the live demo of the Project [here](https://team-109-excel-comp.vercel.app/)
-
-develop
 
 ## Resources
 
@@ -96,10 +94,10 @@ develop
   open your browser and go to `http://localhost:3000/`
   there you'll be able to view the app and see your changes as you code
 
-- ### How to get started with the Backend:  
+- ### How to get started with the Backend:
 
 After cloning and pulling the latest changes, from the base folder(the folder created when you cloned)
-  run `cd Backend`
-  create a virtual environment(call it env)
-  activate your virtual environment
-  To install all dependencies: run 'pip install - requirement.txt'
+run `cd Backend`
+create a virtual environment(call it env)
+activate your virtual environment
+To install all dependencies: run 'pip install - requirement.txt'
