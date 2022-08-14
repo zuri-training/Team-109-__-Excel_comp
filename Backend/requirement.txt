@@ -3,7 +3,12 @@ djangorestframework
 django_extensions
 python-decouple
 djoser
+django-cors-headers
 djangorestframework_simplejwt
 psycopg2 
 psycopg2-binary
-django-cors-headers
+python-dotenv
+pandas
+numpy
+openpyxl
+xlrd

@@ -4,10 +4,51 @@ import Image from "next/image";
 import styles from "../styles/login.module.css";
 import images from "../assets/images/images";
 import icons from "../assets/icons/icons";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import axios from "axios";
+import { useRouter } from "next/router";
 
 export default function Login() {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [invalid, setInvalid] = useState(false);
   const [ticked, setTicked] = useState(false);
+  const [userExists, setUserExists] = useState(false);
+  const router = useRouter();
+
+  const handleSubmit = () => {
+    axios
+      .post("http://127.0.0.1:8000/auth/token/login/", {
+        email: email,
+        password: password,
+      })
+      .then((res) => {
+        console.log(res);
+        localStorage.setItem("Token", res.data.auth_token);
+        router.push("/dashboard");
+      })
+      .catch((e) => {
+        const error = Object.keys(e.response.data);
+        alert(e.response.data[error[0]]);
+      });
+  };
+
+  function validateEmail(elementValue) {
+    var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+    return emailPattern.test(elementValue);
+  }
+
+  const handleEmail = () => {
+    var valid = validateEmail(email);
+    valid ? setInvalid(false) : setInvalid(true);
+  };
+
+  useEffect(() => {
+    const token = localStorage.getItem("Token");
+    if (token) {
+      router.push("/dashboard");
+    }
+  }, []);
 
   return (
     <div className={styles.container}>
@@ -39,10 +80,20 @@ export default function Login() {
             </div>
 
             <label className={styles.label}>Email Address</label>
-            <input className={styles.input} type="email" required />
+            <input
+              className={styles.input}
+              type="email"
+              onChange={(e) => setEmail(e.target.value)}
+              style={{ borderColor: invalid ? "red" : "rgba(22, 22, 22, 0.6)" }}
+              onBlur={handleEmail}
+            />
 
             <label className={styles.label}>Password</label>
-            <input className={styles.input} type="password" required />
+            <input
+              className={styles.input}
+              type="password"
+              onChange={(e) => setPassword(e.target.value)}
+            />
             <div className={styles.remember__me}>
               <div className={styles.option}>
                 {ticked ? (
@@ -66,6 +117,7 @@ export default function Login() {
               type="button"
               value="Get Started"
               className={styles.button}
+              onClick={handleSubmit}
             />
           </form>
         </div>

@@ -1,3 +1,6 @@
+import os
+from dotenv import load_dotenv
+load_dotenv()
 """
 Django settings for CompareX project.
 
@@ -48,7 +51,7 @@ INSTALLED_APPS = [
 
     'django_extensions',
     'apps.accounts.apps.AccountsConfig',
-    
+    'apps.excel.apps.ExcelConfig',
 ]
 
 MIDDLEWARE = [
@@ -62,41 +65,44 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-CORS_ALLOWED_ORIGINS = [
-"https://domain.com",
-"https://api.domain.com",
-"http://localhost:8080",
-"http://127.0.0.1:3000"
-]
+CORS_ORIGIN_ALLOW_ALL = True
 
-CORS_URLS_REGEX = r'^/api/.*$'
+# CORS_ALLOWED_ORIGINS = [
+# "https://domain.com",
+# "https://api.domain.com",
+# "http://localhost:8080",
+# "http://127.0.0.1:3000",
+# 'http://localhost:3000'
+# ]
 
-CORS_ALLOW_ALL_ORIGINS = False
+# CORS_URLS_REGEX = r'^/api/.*$'
 
-CORS_ALLOW_METHODS = [
-'DELETE',
-'GET',
-'OPTIONS',
-'PATCH',
-'POST',
-'PUT',
-]
+# CORS_ALLOW_ALL_ORIGINS = False
 
-CORS_ALLOW_HEADERS = [
-'accept',
-'accept-encoding',
-'authorization',
-'content-type',
-'dnt',
-'origin',
-'user-agent',
-'x-csrftoken',
-'x-requested-with',
-]
+# CORS_ALLOW_METHODS = [
+# 'DELETE',
+# 'GET',
+# 'OPTIONS',
+# 'PATCH',
+# 'POST',
+# 'PUT',
+# ]
 
-CORS_ALLOW_CREDENTIALS = True
+# CORS_ALLOW_HEADERS = [
+# 'accept',
+# 'accept-encoding',
+# 'authorization',
+# 'content-type',
+# 'dnt',
+# 'origin',
+# 'user-agent',
+# 'x-csrftoken',
+# 'x-requested-with',
+# ]
 
-CORS_PREFLIGHT_MAX_AGE = 3600
+# CORS_ALLOW_CREDENTIALS = True
+
+# CORS_PREFLIGHT_MAX_AGE = 3600
 
 REST_FRAMEWORK = {
     # Use Django's standard `django.contrib.auth` permissions,
@@ -108,7 +114,7 @@ REST_FRAMEWORK = {
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
-        'rest_framework_simplejwt.authentication.JWTAuthentication',
+        'rest_framework.authentication.TokenAuthentication',
     ),
 }
 
@@ -157,8 +163,8 @@ TEMPLATES = [
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
-EMAIL_HOST_USER = 'comparexzuri@gmail.com'
-EMAIL_HOST_PASSWORD='bededjinmldjushj'
+EMAIL_HOST_USER = os.getenv('EMAIL_HOST_USER')
+EMAIL_HOST_PASSWORD= os.getenv('EMAIL_HOST_PASSWORD')
 EMAIL_USE_TLS= True
 
 
@@ -173,13 +179,17 @@ AUTH_USER_MODEL = "accounts.CustomUSer"
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
 DATABASES = {
+    # 'default': {
+    #     'ENGINE': 'django.db.backends.postgresql_psycopg2',
+    #     'NAME': 'comparex', 
+    #     'USER': 'postgres', 
+    #     'PASSWORD': 'Hopeyemie_123',
+    #     'HOST': '127.0.0.1',
+    #     'PORT': '5432',
+    # }
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'comparex', 
-        'USER': 'postgres', 
-        'PASSWORD': 'Hopeyemie_123',
-        'HOST': '127.0.0.1',
-        'PORT': '5432',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 

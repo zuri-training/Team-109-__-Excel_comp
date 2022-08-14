@@ -86,66 +86,6 @@
   width: 60%;
 }
 
-.search {
-  width: 95%;
-  display: flex;
-  justify-content: space-between;
-}
-
-.search__bar {
-  box-sizing: border-box;
-  display: flex;
-  padding: 0px 12px;
-  width: 60%;
-  height: 36px;
-
-  background: #ffffff;
-  border: 1px solid rgba(58, 53, 65, 0.23);
-  border-radius: 6px;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  letter-spacing: 0.15px;
-
-  color: rgba(58, 53, 65, 0.38);
-}
-
-.search__bar::placeholder {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  letter-spacing: 0.15px;
-  color: rgba(58, 53, 65, 0.38);
-}
-
-.search__bar[type="search"]::-webkit-search-cancel-button {
-  display: none;
-}
-
-.sort__button {
-  padding: 0px 22px 0px 12px;
-
-  background: #ffffff;
-  border: 1px solid rgba(58, 53, 65, 0.23);
-  border-radius: 6px;
-  font-family: "Passenger Sans";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 18px;
-  color: #000000;
-  display: flex;
-  align-items: center;
-}
-
-.sort__icon {
-  width: 1em;
-  height: 19px;
-  position: relative;
-  margin-right: 6px;
-}
-
 .recent {
   width: 100%;
   margin-top: 10px;
@@ -158,15 +98,15 @@
   justify-content: space-between;
   align-items: center;
   box-sizing: border-box;
-  padding: 0 25px;
+  padding: 0 20px;
 }
 
 .recent__header__title {
   font-family: "Passenger Sans";
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 26px;
-  color: #4c4c4c;
+  color: #161616;
 }
 
 .view__all {
@@ -174,19 +114,17 @@
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  color: #1e5b48;
+  color: #015239;
 }
 
 .table {
   width: 100%;
-  height: 225px;
+  height: 260px;
   background: #fcfcfc;
   border: 1.09669px solid #e0e7ed;
   border-radius: 4px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
   font-size: 36px;
   font-weight: 600;
   font-family: "Passenger Sans";
@@ -194,8 +132,142 @@
   font-weight: 900;
 }
 
+.table__header {
+  height: 15%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #f9f9f9;
+  border-bottom: 1.09669px solid #e0e7ed;
+}
+
+.recent__items {
+  flex-grow: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #ecf5ed;
+}
+
+.notes__icon {
+  width: 20%;
+  height: 35%;
+  position: relative;
+}
+
+.notes__empty__text {
+  font-family: "Passenger Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  text-align: center;
+  color: #d0d0d0;
+  opacity: 0.5;
+}
+
+.table__base {
+  height: 10%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 0px 10px;
+  align-items: center;
+  border-top: 1px solid #3d3d3d;
+  background: #f6f5f5;
+}
+
+.more {
+  font-family: "Passenger Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  color: #3d3d3d;
+}
+
+.entries {
+  display: flex;
+}
+
+.show {
+  font-family: "Passenger Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  color: #161616;
+  display: flex;
+}
+
+.number__show {
+  background-color: white;
+  border: 0.767296px solid #ecf5ed;
+  border-radius: 6.13836px;
+  display: flex;
+  align-items: center;
+  padding: 0px 10px;
+  color: black;
+  font-size: 12px;
+  margin-left: 4px;
+}
+
+.entries__text {
+  font-family: "Passenger Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  color: #161616;
+  margin-left: 10px;
+}
+
+.tickbox {
+  width: 14px;
+  height: 14px;
+  background-color: white;
+  border: 2px solid #bec8d0;
+  position: relative;
+}
+
+.table__name {
+  font-family: "Passenger Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  color: #161616;
+}
+.up__down__icon {
+  width: 14px;
+  height: 18px;
+  position: relative;
+}
+
+.table__column {
+  display: flex;
+  align-items: center;
+}
+
+.column__name {
+  font-family: "Passenger Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  color: #161616;
+  margin-right: 15px;
+}
+
+.action {
+  font-family: "Passenger Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  color: #161616;
+}
+
 .right__box {
   width: 30%;
+  margin-top: 34px;
 }
 
 .right__box__button {
@@ -223,4 +295,123 @@
   background: #fcfcfc;
   box-shadow: 0px 2px 12px rgba(37, 51, 66, 0.15);
   border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0% 5%;
+}
+
+.activity__monitor__top {
+  width: 100%;
+  height: 15%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.drag__box {
+  height: 100%;
+  width: 60%;
+  display: flex;
+  align-items: center;
+}
+
+.drag__icon {
+  width: 20%;
+  height: 100%;
+  position: relative;
+  margin-right: 15px;
+}
+
+.top__text__box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.upper__text {
+  font-family: "Passenger Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  color: #161616;
+}
+
+.lower__text {
+  font-family: "Passenger Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  color: #646464;
+}
+
+.menu__icon {
+  width: 10%;
+  height: 90%;
+  position: relative;
+}
+
+.green__box {
+  width: 100%;
+  height: 25%;
+  margin-top: 10px;
+  background: #cfe6d2;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+}
+
+.elipse__icon {
+  width: 15%;
+  height: 70%;
+  margin-left: 20px;
+  position: relative;
+}
+
+.green__box__text__box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 10px;
+}
+
+.welcome {
+  font-family: "Passenger Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  color: #3d3d3d;
+}
+
+.get__started {
+  font-family: "Passenger Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  color: #3d3d3d;
+}
+
+.recent__alerts {
+  font-family: "Passenger Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  color: #161616;
+  align-self: flex-start;
+}
+
+.box__icon {
+  width: 40%;
+  height: 25%;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.no__alerts {
+  font-family: "Passenger Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  color: #b1b1b1;
 }
