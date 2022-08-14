@@ -4,6 +4,7 @@ import styles from "../../styles/Dashboard/newtask.module.css";
 import icons from "../../assets/icons/icons";
 import { useState } from "react";
 import Dropzone from "react-dropzone";
+import axios from "axios";
 
 export default function NewTask() {
   const [options, setOptions] = useState([false, false, false, false]);
@@ -24,6 +25,13 @@ export default function NewTask() {
       let file = files[0];
       setFile(file);
     }
+  };
+
+  const handleSubmit = () => {
+    axios.post("", {
+      file: file,
+      file2: file2 || null,
+    });
   };
 
   return (

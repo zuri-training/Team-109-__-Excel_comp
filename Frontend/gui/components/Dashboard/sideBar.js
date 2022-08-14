@@ -4,12 +4,15 @@ import styles from "../../styles/Dashboard/sidebar.module.css";
 import icons from "../../assets/icons/icons";
 import { useSpring, animated } from "react-spring";
 import { useEffect, useState } from "react";
+import axios from "axios";
+import { useRouter } from "next/router";
 
 export default function SideBar(props) {
   const { view, setView } = props;
   const [expanded, setExpanded] = useState(false);
   const [showText, setShowText] = useState(false);
   const [action, setAction] = useState("out");
+  const router = useRouter();
 
   const sidebar = useSpring({
     width: expanded ? "16%" : "5%",
@@ -43,12 +46,41 @@ export default function SideBar(props) {
     }
   };
 
+  const handleSignOut = () => {
+    const token = localStorage.getItem("Token");
+    console.log(token);
+    const config = {
+      headers: {
+        Authorization: `Token ${token}`,
+      },
+    };
+    axios
+      .post("http://127.0.0.1:8000/auth/token/logout/", {}, config)
+      .then((res) => {
+        console.log(res);
+        localStorage.removeItem("Token");
+        router.push("/login");
+      })
+      .catch((e) => {
+        console.log(e);
+        const error = Object.keys(e.response.data);
+        alert(e.response.data[error[0]]);
+      });
+  };
+
   const options = [
     { icon: icons.board, text: "Dashboard" },
     { icon: icons.addProject, text: "New task" },
     { icon: icons.list, text: "Recent sheet" },
     { icon: icons.settings, text: "Settings" },
   ];
+
+  useEffect(() => {
+    const token = localStorage.getItem("Token");
+    if (!token) {
+      router.push("/login");
+    }
+  }, []);
 
   return (
     <animated.div className={styles.container} style={sidebar}>
@@ -115,7 +147,11 @@ export default function SideBar(props) {
           </div>
         )}
       </animated.div>
-      <animated.div className={styles.logout} style={buttons}>
+      <animated.div
+        className={styles.logout}
+        style={buttons}
+        onClick={handleSignOut}
+      >
         <div className={styles.logout__icon}>
           <Image alt="logout button" src={icons.logout} layout="fill" />
         </div>
