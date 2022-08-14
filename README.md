@@ -88,11 +88,14 @@ View the live demo of the Project [here](https://team-109-excel-comp.vercel.app/
 - ### How to get started with the Frontend:
 
   After cloning and pulling the latest changes, from the base folder(the folder created when you cloned)
-  run `cd Frontend/gui`
-  run `npm run dev`
+
+  - run `cd Frontend/gui`
+  - run `npm run dev`
 
   open your browser and go to `http://localhost:3000/`
   there you'll be able to view the app and see your changes as you code
+
+  - #### To Build the Frontend
 
 - ### How to get started with the Backend:
 
@@ -101,6 +104,8 @@ run `cd Backend`
 create a virtual environment(call it env)
 activate your virtual environment
 To install all dependencies: run 'pip install - requirement.txt'
+
+## Deployment Instructions
 
 - ### Frontend Build Instructions
 - cd into the frontend base app, from root directory run `cd Frontend/gui`
