@@ -30,6 +30,8 @@ View the live demo of the Project [here](https://team-109-excel-comp.vercel.app/
 
 - #### [Suggestions Box](https://docs.google.com/document/d/1dvsMw-w4K_LoPm12NRYw2Z-xbglzFKFyQ6gf6764OG8/edit)
 
+- #### [1st Presentation slides](https://www.figma.com/file/rh6L3G2CfzwLMqxnnl7vii/109-first-presentation?node-id=0%3A1)
+
 ## How to Contribute
 
 - #### Fork your own copy of the Repository
