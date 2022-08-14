@@ -1,0 +1,56 @@
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.table {
+  width: 100%;
+  height: 100%;
+  padding: 0%;
+  border-spacing: 0;
+  overflow: auto;
+}
+
+#table__head {
+  background: rgb(163, 163, 163);
+  padding: 0%;
+}
+
+.table__row {
+  font-size: 15px;
+  height: 2em;
+  font-family: "Passenger Sans";
+  font-style: normal;
+  font-weight: 300;
+}
+
+.table__cells {
+  background: rgba(255, 255, 255);
+  border-right: 1.5px solid #d1d1d1;
+  padding: 0px 20px 0px 7px;
+  height: 2em;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.triangle__icon {
+  width: 90%;
+  height: 90%;
+  position: relative;
+}
+
+.button {
+  font-size: 16px;
+  color: white;
+  background-color: green;
+  border-radius: 6px;
+  width: 5em;
+  height: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
