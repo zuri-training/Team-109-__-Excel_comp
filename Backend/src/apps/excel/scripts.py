@@ -3,7 +3,7 @@ import numpy as np
 
 input = input('Select:')
 
-excel_file = 'DocA.xlsx'
+excel_file = 'sample.xlsx'
 
 #Dataframes
 df = pd.read_excel(excel_file)
