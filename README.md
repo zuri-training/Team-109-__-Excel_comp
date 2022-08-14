@@ -102,3 +102,4 @@ run `cd Backend`
 create a virtual environment(call it env)
 activate your virtual environment
 To install all dependencies: run 'pip install -r requirement.txt'
+start the backend with "python manage.py runsever 8000
