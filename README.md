@@ -101,3 +101,7 @@ run `cd Backend`
 create a virtual environment(call it env)
 activate your virtual environment
 To install all dependencies: run 'pip install - requirement.txt'
+
+- ### Frontend Build Instructions
+- cd into the frontend base app, from root directory run `cd Frontend/gui`
+- build the app, run `npm run build`
