@@ -102,12 +102,9 @@ After cloning and pulling the latest changes, from the base folder(the folder cr
 run `cd Backend`
 create a virtual environment(call it env)
 activate your virtual environment
+install all dependencies by running "pip insall -r requirement.txt"
+cd to the 'src' folder and run 'python manage.py runserver 8000' to get the backend running.
 
-## Deployment Instructions
+###APIs 
 
-### Frontend Build Instructions
-- cd into the frontend base app, from root directory run `cd Frontend/gui`
-- build the app, run `npm run build`
-
-To install all dependencies: run 'pip install -r requirement.txt'
-start the backend with "python manage.py runsever 8000
+The API used is Django rest_framwork which enables the interaction between the backend and the frontend
