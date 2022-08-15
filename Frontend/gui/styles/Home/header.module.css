@@ -10,7 +10,7 @@
   margin: 0%;
 }
 .nav {
-  width: 91%;
+  width: 95%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -18,9 +18,20 @@
   padding-top: 22px;
 }
 
+.logo__name {
+  display: flex;
+  align-items: center;
+}
+
 .logo__container {
   display: flex;
   align-items: center;
+}
+
+.logo__icon {
+  position: relative;
+  height: 45px;
+  width: 40px;
 }
 
 .logo {
@@ -29,6 +40,7 @@
   font-size: 30px;
   cursor: pointer;
   margin: 0%;
+  margin-left: 10px;
 }
 
 .list {
@@ -37,7 +49,7 @@
   display: flex;
   align-items: center;
   margin: 0%;
-  margin-left: 10px;
+  margin-left: 0px;
 }
 
 .list__item {
@@ -86,10 +98,22 @@
   color: red;
 }
 
-.main {
+.main__container {
+  width: 100%;
+  height: 100%;
   position: absolute;
+  display: flex;
+  justify-content: center;
+}
+
+.main {
   top: 25%;
-  left: 22%;
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  align-items: center;
 }
 .content {
   margin-top: 20px;
