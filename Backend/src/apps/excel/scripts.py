@@ -33,7 +33,7 @@ display = (df.style.apply(highlight_cols, axis = None))
 display.to_excel("Highlighted_Duplicates.xlsx")
 
 
-#COMPARE ROWS WITHIN ONE DOCUMENT AND RETURN 1 FILE
+#SCRIPT TO COMPARE ROWS WITHIN ONE DOCUMENT AND RETURN 1 FILE
 
 import pandas as pd 
 import numpy as np
