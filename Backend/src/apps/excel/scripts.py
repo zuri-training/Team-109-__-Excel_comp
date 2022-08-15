@@ -123,10 +123,12 @@ import xlwings as xw
 initial_version = Path.cwd() / "DocA.xlsx"
 updated_version = Path.cwd() / "DocB.xlsx"
 
+#data frames
 df_initial = pd.read_excel(initial_version)
 
 df_updated = pd.read_excel(updated_version)
 
+#Compare differences
 diff = df_updated.compare(df_initial, align_axis=1)
 
 diff = df_updated.compare(df_initial, keep_shape=True, keep_equal=False)
@@ -141,7 +143,7 @@ with xw.App(visible=False) as app:
     updated_wb = app.books.open(updated_version)
     updated_ws = updated_wb.sheets(1)
 
-
+#print colours
     for cell in updated_ws.used_range:
         old_value = initial_ws.range((cell.row, cell.column)).value
         if cell.value != old_value:
