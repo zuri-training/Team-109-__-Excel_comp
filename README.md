@@ -84,6 +84,7 @@ View the live demo of the Project [here](https://team-109-excel-comp.vercel.app/
   - Open the terminal.
   - Run `git pull upstream develop`
     > This will check for any changes that have been made to the original repository, it will then bring those changes to your local machine and merge (merge) the changes.
+## Deployment Instructions
 
 - ### How to get started with the Frontend:
 
@@ -101,10 +102,9 @@ After cloning and pulling the latest changes, from the base folder(the folder cr
 run `cd Backend`
 create a virtual environment(call it env)
 activate your virtual environment
-To install all dependencies: run 'pip install - requirement.txt'
+install all dependencies by running "pip insall -r requirement.txt"
+cd to the 'src' folder and run 'python manage.py runserver 8000' to get the backend running.
 
-## Deployment Instructions
+###APIs 
 
-- ### Frontend Build Instructions
-- cd into the frontend base app, from root directory run `cd Frontend/gui`
-- build the app, run `npm run build`
+The API used is Django rest_framwork which enables the interaction between the backend and the frontend
