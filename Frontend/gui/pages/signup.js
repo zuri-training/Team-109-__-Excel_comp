@@ -28,7 +28,7 @@ export default function SignUp() {
   const handleSubmit = () => {
     if (password.length >= 8) {
       axios
-        .post("http://127.0.0.1:8000/auth/users/", {
+        .post("https://comparexbackend.herokuapp.com/auth/users/", {
           name: name,
           email: email,
           password: password,

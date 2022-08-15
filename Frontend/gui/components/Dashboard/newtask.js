@@ -28,10 +28,14 @@ export default function NewTask() {
   };
 
   const handleSubmit = () => {
-    axios.post("", {
-      file: file,
-      file2: file2 || null,
-    });
+    if (file) {
+      axios.post("https://comparexbackend.herokuapp.com/excel/upload", {
+        file1: file,
+        file2: file2 || null,
+      });
+    } else {
+      alert("Please upload a file first");
+    }
   };
 
   return (
@@ -140,7 +144,9 @@ export default function NewTask() {
           </label>
         </div>
       </div>
-      <button className={styles.btn}>Compare Files</button>
+      <button className={styles.btn} onClick={handleSubmit}>
+        Compare Files
+      </button>
     </section>
   );
 }

@@ -55,7 +55,11 @@ export default function SideBar(props) {
       },
     };
     axios
-      .post("http://127.0.0.1:8000/auth/token/logout/", {}, config)
+      .post(
+        "https://comparexbackend.herokuapp.com/auth/token/logout/",
+        {},
+        config
+      )
       .then((res) => {
         console.log(res);
         localStorage.removeItem("Token");
@@ -74,13 +78,6 @@ export default function SideBar(props) {
     { icon: icons.list, text: "Recent sheet" },
     { icon: icons.settings, text: "Settings" },
   ];
-
-  useEffect(() => {
-    const token = localStorage.getItem("Token");
-    if (!token) {
-      router.push("/login");
-    }
-  }, []);
 
   return (
     <animated.div className={styles.container} style={sidebar}>
