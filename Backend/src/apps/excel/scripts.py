@@ -33,6 +33,39 @@ display = (df.style.apply(highlight_cols, axis = None))
 display.to_excel("Highlighted_Duplicates.xlsx")
 
 
+#SCRIPT TO COMPARE ROWS WITHIN ONE DOCUMENT AND RETURN 1 FILE
+
+import pandas as pd 
+import numpy as np
+from pathlib import Path
+
+input = input('Select:')
+
+# excel_file = 'DocA.xlsx'
+initial_version = Path.cwd() / "DocA.xlsx"
+
+df_initial = pd.read_excel(initial_version)
+
+df = pd.read_excel("DocA.xlsx")
+
+#To take a look at duplication in dataframe
+df1 = df.duplicated()
+
+#To calculate duplicate rows
+df2 = df.duplicated().sum()
+
+#Extract duplicated rows
+df3 = df.loc[df.duplicated(), :]
+
+#To drop duplicated rows
+df4 = df.drop_duplicates(keep=False)
+
+print(df4)
+
+#To take print out of Non-Duplicates to excel
+df4.to_excel(Path.cwd() / "Non-Duplicates.xlsx")
+
+
 #SCRIPT TO RETURN EXCEL FILES WITH DUPLICATES OR/AND NON-DUPLICATES
 
 import pandas as pd
