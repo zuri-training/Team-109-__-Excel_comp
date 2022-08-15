@@ -112,3 +112,42 @@ else:
     dup_c = (duplicates == 'd')
     return_document(True if dup_c else False,'duplicates' if dup_c else "non-duplicates")
 print("Done")
+
+
+#SCRIPT TO COMPARE 2 DOCUMENTS AND RETURN 2 FILES HIGHLIGHTED
+
+from pathlib import Path
+import pandas as pd
+import xlwings as xw
+
+initial_version = Path.cwd() / "DocA.xlsx"
+updated_version = Path.cwd() / "DocB.xlsx"
+
+df_initial = pd.read_excel(initial_version)
+
+df_updated = pd.read_excel(updated_version)
+
+diff = df_updated.compare(df_initial, align_axis=1)
+
+diff = df_updated.compare(df_initial, keep_shape=True, keep_equal=False)
+diff
+diff = df_updated.compare(df_initial, align_axis=1)
+diff.to_excel(Path.cwd() / "Difference.xlsx")
+
+with xw.App(visible=False) as app:
+    initial_wb = app.books.open(initial_version)
+    initial_ws = initial_wb.sheets(1)
+
+    updated_wb = app.books.open(updated_version)
+    updated_ws = updated_wb.sheets(1)
+
+
+    for cell in updated_ws.used_range:
+        old_value = initial_ws.range((cell.row, cell.column)).value
+        if cell.value != old_value:
+            cell.api.AddComment(f"Value from {initial_wb.name}: {old_value}")  # WARNING: Platform specific (!)
+            cell.color = (255, 234, 0)  # light yellow
+       
+    updated_wb.save(Path.cwd() / "Duplicates_with_Non_Duplicates_Highlighted.xlsx")
+
+    
