@@ -5,28 +5,33 @@ import icons from "../../assets/icons/icons";
 import images from "../../assets/images/images";
 import { useEffect, useState } from "react";
 import axios from "axios";
+import { useRouter } from "next/router";
 
 export default function Navbar() {
   const [name, setName] = useState("");
+  const router = useRouter();
 
   useEffect(() => {
     const token = localStorage.getItem("Token");
-    console.log(token);
-    const config = {
-      headers: {
-        Authorization: `Token ${token}`,
-      },
-    };
-    axios
-      .get("http://127.0.0.1:8000/auth/users/me/", config)
-      .then((res) => {
-        console.log(res);
-        setName(res.data.name);
-      })
-      .catch((e) => {
-        const error = Object.keys(e.response.data);
-        alert(e.response.data[error[0]]);
-      });
+    if (token) {
+      const config = {
+        headers: {
+          Authorization: `Token ${token}`,
+        },
+      };
+      axios
+        .get("https://comparexbackend.herokuapp.com/auth/users/me/", config)
+        .then((res) => {
+          console.log(res);
+          setName(res.data.name);
+        })
+        .catch((e) => {
+          const error = Object.keys(e.response.data);
+          alert(e.response.data[error[0]]);
+        });
+    } else {
+      router.push("/login");
+    }
   }, []);
 
   return (

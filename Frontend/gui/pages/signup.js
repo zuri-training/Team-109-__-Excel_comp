@@ -28,7 +28,7 @@ export default function SignUp() {
   const handleSubmit = () => {
     if (password.length >= 8) {
       axios
-        .post("http://127.0.0.1:8000/auth/users/", {
+        .post("https://comparexbackend.herokuapp.com/auth/users/", {
           name: name,
           email: email,
           password: password,
@@ -89,7 +89,7 @@ export default function SignUp() {
             <div className={styles.frame}>
               <Image src={images.or} alt="frame" />
             </div>
-            <label className={styles.label}>Full Name</label>
+            <label className={styles.label}>Username</label>
             <input
               className={styles.input}
               type="text"

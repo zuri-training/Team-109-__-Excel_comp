@@ -18,7 +18,7 @@ export default function Login() {
 
   const handleSubmit = () => {
     axios
-      .post("http://127.0.0.1:8000/auth/token/login/", {
+      .post("https://comparexbackend.herokuapp.com/auth/token/login/", {
         email: email,
         password: password,
       })
